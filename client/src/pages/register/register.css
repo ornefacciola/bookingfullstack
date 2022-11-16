@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Anek+Odia:wght@100;300&family=Beau+Rivage&family=Bebas+Neue&family=Charis+SIL&family=Exo:wght@200;300;400;700;800&family=Lobster&family=Maven+Pro&family=Montserrat:ital,wght@0,100;0,400;0,500;0,600;0,700;0,800;0,900;1,200&family=Noto+Serif:wght@700&family=Open+Sans:wght@300&family=Poppins:wght@200&family=Raleway&family=Rubik:ital,wght@1,300&family=Shadows+Into+Light&family=Source+Serif+Pro:ital@1&family=Water+Brush&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body.regBody{
+    background:linear-gradient(130deg, #003580, #00c6ff);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.reTitle{
+    color:black;
+    justify-content: center;
+    position: relative;
+    font-family: "Bebas Neue";
+    font-size: 60px;
+}
+
+.reTitle::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom:0;
+    height: 3px;
+    width: 80px;
+    background:linear-gradient(130deg, #003580, #00c6ff);
+}
+
+.register{
+    max-width: 1000px;
+    background:white;
+    padding: 25px 30px;
+    border-radius: 5px;
+}
+
+.rInput{
+    margin-top: 20px;
+    width: 40%;
+    height: 40px;
+
+}
+
+.btn{
+    border: none;
+    background-color: #0071c2;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.lButton:disabled{
+    background-color: #0071c28c;
+    cursor: not-allowed;
+}
