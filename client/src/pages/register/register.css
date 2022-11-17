@@ -63,3 +63,7 @@ body.regBody{
     background-color: #0071c28c;
     cursor: not-allowed;
 }
+
+.submit-success, .submit-error {
+    display: none;
+}

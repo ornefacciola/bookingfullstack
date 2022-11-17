@@ -3,7 +3,6 @@ import "./register.css"
 import {useState} from "react"; 
 import axios from "axios";
 
-
 const Register = () => {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
@@ -48,6 +47,7 @@ const Register = () => {
         setSubmitted(false);
     }
     
+
     const handleClick = async e => {
         e.preventDefault()
         try{
@@ -56,9 +56,13 @@ const Register = () => {
             };
       
             await axios.post("/auth/register", newUser)
-            setSubmitted(true);
+            setSubmitted(true)
+            alert("User created!🎉");
+            window.location.assign("/login")
+
           }catch(err){
-            console.log(err);
+            console.log(err)
+            alert("Error, please fill each field");
           }
         };
 

@@ -6,7 +6,7 @@ const Featured = () => {
 
   return (
     <div className="featured">
-        {loading ? ("Loading please wait"
+        {loading ? ("Loading..."
         ) : ( 
           <>
             <div className="featuredItem">
